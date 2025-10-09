@@ -26,7 +26,7 @@ const hanseokbong = localFont({
     {
       path: "../public/fonts/GapyeongHanseokbongL.woff",
       weight: "300",
-      style: "light",
+      style: "normal",
     },
     {
       path: "../public/fonts/GapyeongHanseokbongR.woff",
@@ -36,7 +36,7 @@ const hanseokbong = localFont({
     {
       path: "../public/fonts/GapyeongHanseokbongB.woff",
       weight: "700",
-      style: "bold",
+      style: "normal",
     },
   ],
   variable: "--font-hanseokbong",

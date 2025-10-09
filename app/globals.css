@@ -12,6 +12,8 @@
     @apply m-0;
   }
 } */
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic&display=swap");
 /* Tailwind v4 추천: @theme 로 토큰 재정의 */
 @theme inline {
   --font-sans: var(--font-batang), serif;
@@ -39,7 +41,6 @@
     scrollbar-width: none; /* Firefox */
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic&display=swap");
 
 /* 선택적인 전역 색상 등 */
 :root {
