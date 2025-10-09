@@ -1,26 +1,161 @@
 @import "tailwindcss";
 
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@layer base {
+  p {
+    @apply m-0;
+  }
+} */
+/* Tailwind v4 추천: @theme 로 토큰 재정의 */
+@theme inline {
+  --font-sans: var(--font-batang), serif;
+  --font-zen: "Zen Antique Soft", serif;
+  --font-zen-maru: "Zen Maru Gothic", sans-serif;
+  --font-zen-soft: "Zen Antique Soft", serif;
+
+  /* === Colors === */
+  --color-deepblue: #1b2f49; /* rgba(27,47,73,1) */
+  --color-paper: #f5f3ec; /* rgba(245,243,236,1) */
+  --color-pri-navy: rgba(43, 85, 126, 1);
+
+  /* === Break Point === */
+  --breakpoint-xs: 20rem; /* 320px */
+  --breakpoint-sm: 23.4375rem; /* 375px */
+  --breakpoint-md: 28rem; /* 448px */
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic&display=swap");
+
+/* 선택적인 전역 색상 등 */
 :root {
-  --background: #ffffff;
+  --background: rgba(243, 242, 239, 1);
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-hanseokbong {
+  font-family: var(--font-hanseokbong), serif;
+  color: rgba(66, 66, 66, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.font-ownglyph {
+  font-family: var(--font-ownglyph), serif;
+}
+
+.font-gyeonggi {
+  font-family: var(--font-gyeonggi), serif;
+}
+
+.bg-intro-gradient {
+  background: linear-gradient(180deg, #5b5247 0%, #937c5f 64.46%);
+}
+
+.intro-black-gradient {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 25.16%, #000000 100%);
+}
+
+.mansae-bold-line {
+  --mansae-bw: 1.05px;
+  --mansae-bc: rgba(0, 0, 0, 1);
+}
+.mansae-light-line {
+  --mansae-bw: 0.49px;
+  --mansae-bc: rgba(138, 138, 138, 1);
+}
+
+.saju-palja {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+thead th:first-child {
+  width: 58px;
+}
+thead th:not(:first-child) {
+  width: calc((100% - 58px) / 4);
+}
+
+table thead {
+  border-bottom: 1.05px solid rgba(0, 0, 0, 1);
+  padding: 16px 0;
+}
+
+table thead th {
+  border-right: 0.49px solid rgba(138, 138, 138, 1);
+}
+
+table thead th:first-child,
+table thead th:last-child {
+  border-right: 1.05px solid rgba(0, 0, 0, 1);
+}
+
+tbody th {
+  border-right: 1.05px solid rgba(0, 0, 0, 1);
+  border-bottom: 1.05px solid rgba(0, 0, 0, 1);
+  padding: 0 4.5px;
+}
+
+tbody td {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+}
+
+tbody td {
+  border-right: 0.49px solid rgba(138, 138, 138, 1);
+}
+
+tbody td {
+  border-right: 0.49px solid rgba(138, 138, 138, 1);
+}
+
+tbody td:last-child {
+  border-right: 1.05px solid rgba(0, 0, 0, 1);
+}
+
+tbody tr {
+  border-bottom: 1.05px solid rgba(0, 0, 0, 1);
+}
+
+tbody tr:nth-child(2) {
+  border-bottom: 0.49px solid rgba(138, 138, 138, 1);
+}
+
+/* 전역 기본 폰트 = font-sans(=Batang) */
+@layer base {
+  body {
+    @apply font-sans;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  } /* Chrome/Safari/Edge */
+  body {
+    -ms-overflow-style: none; /* IE/Edge 구형 */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
+.shadow-container {
+  filter: drop-shadow(0px 1px 20px rgba(0, 0, 0, 0.1));
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
