@@ -43,7 +43,7 @@
 ---
 
 
-## 🌱 향후 개선
+## 향후 개선
 
 - 컨테이너 쿼리(`cq`) 적용으로 **디자인 비율 자동 스케일링** 고도화  
 - 접근성(A11y) 보완 (`aria-label`, heading 구조 개선)
@@ -52,7 +52,7 @@
 ---
 
 
-## ✨ 제작자
+## 제작자
 
 **정혜지 (Hyeji Jeong)**  
 Frontend Developer / UI Engineer  
