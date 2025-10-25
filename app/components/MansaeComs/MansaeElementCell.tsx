@@ -15,7 +15,7 @@ const elementColors: Record<
 > = {
   水: { bg: "rgba(47, 47, 47, 1)", text: "#fff" },
   火: { bg: "rgba(194, 48, 48, 1)", text: "#fff" },
-  土: { bg: "rgba(239, 186, 62, 1);", text: "rgba(0, 0, 0, 1)" },
+  土: { bg: "rgba(239, 186, 62, 1)", text: "rgba(0, 0, 0, 1)" },
   木: { bg: "rgba(24, 134, 140, 1)", text: "#fff" },
   金: {
     bg: "rgba(249, 249, 249, 1)",
