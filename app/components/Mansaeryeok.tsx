@@ -96,7 +96,7 @@ export default function Mansaeryeok() {
                     <ElementCell korean="사" chinese="巳" element="陰火" />
                   </td>
                   <td>
-                    <ElementCell korean="해" chinese="亥" element="陰水" />
+                    <ElementCell korean="진" chinese="辰" element="陽土" />
                   </td>
                   <td>
                     <ElementCell korean="유" chinese="酉" element="陰金" />
