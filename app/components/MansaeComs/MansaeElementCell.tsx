@@ -32,12 +32,12 @@ export default function ElementCell({ korean, chinese, element }: Props) {
 
   return (
     <div
-      className="mx-auto my-auto w-[49px] h-[49px] md:w-[55.45px] md:h-[55.45px] box-border rounded-[12.55px] p-[2px] md:p-[4px]
+      className="mx-auto my-auto w-[49px] h-[49px] sm:w-[55.45px] sm:h-[55.45px] box-border rounded-[12.55px] p-[2px] sm:p-[4px]
                 flex flex-col items-center justify-between"
       style={{ backgroundColor: bg, color: text, border: border }}
     >
       <span className="font-gyeonggi text-[7.6px]">{korean}</span>
-      <span className="font-zen text-[19px] font-bold md:text-[25.11px] md:font-normal leading-none">
+      <span className="font-zen text-[19px] font-bold sm:text-[25.11px] sm:font-normal leading-none">
         {chinese}
       </span>
       <span className="font-zen-maru text-[8.37px]">{element}</span>
